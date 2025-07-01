@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Personal Financial Tracker</string>
+    <string name="reminder_on">Reminder On</string>
+    <string name="reminder_off">Reminder Off</string>
+    <string name="budget_saved">Budget Saved</string>
+    <string name="invalid_amount">Invalid amount</string>
+    <string name="income_expense_summary">Income: Rs. %.2f | Expense: Rs. %.2f</string>
+    <string name="daily_reminder">Daily Reminder</string>
+    <string name="category_wise_summary">Category-wise Summary</string>
+    <string name="add_transaction">Add Transaction</string>
+    <string name="backup">Backup</string>
+    <string name="restore">Restore</string>
+    <string name="set_monthly_budget">Set Monthly Budget</string>
+    <string name="save_budget">Save Budget</string>
+    <string name="monthly_budget_rs_0_spent_rs_0">Monthly Budget: Rs. 0 | Spent: Rs. 0</string>
+    <string name="title">Title</string>
+    <string name="amount">Amount</string>
+    <string name="income">Income</string>
+    <string name="expense">Expense</string>
+    <string name="date">Date</string>
+    <string name="save_transaction">Save Transaction</string>
+    <string name="delete_transaction">Delete Transaction</string>
+    <string name="finance_tracker">Finance Tracker</string>
+    <string name="sign_in_for_a_personalized_experience">Sign in for a personalized experience</string>
+    <string name="recommend_to_friends">🔗 Recommend to Friends</string>
+    <string name="rate_the_app">⭐ Rate the App</string>
+    <string name="block_ads">🚫 Block Ads</string>
+    <string name="settings">⚙️ Settings</string>
+
+</resources>

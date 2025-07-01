@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Scrollable Report Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="90dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reports Page"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="24dp" />
+            <TextView
+                android:id="@+id/tvCurrentBudget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Current Budget: Rs. 0.00"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                android:layout_marginBottom="12dp" />
+            <TextView
+                android:id="@+id/tvBudgetUsage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Used: Rs. 0.00 / Rs. 0.00"
+                android:textSize="16sp"
+                android:layout_marginBottom="4dp" />
+
+            <ProgressBar
+                android:id="@+id/progressBudget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:progress="0"
+                android:max="100"
+                android:layout_marginBottom="8dp"
+                android:progressTint="@color/btncolor" />
+
+            <TextView
+                android:id="@+id/tvRemainingBudget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Remaining: Rs. 0.00"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                android:layout_marginBottom="12dp" />
+
+
+            <!-- Budget Input Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="16dp"
+                android:padding="12dp">
+
+                <EditText
+                    android:id="@+id/etBudget"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:hint="Set Monthly Budget"
+                    android:inputType="numberDecimal"
+                    android:padding="8dp" />
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSetBudget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:icon="@android:drawable/ic_menu_save"
+                android:text="Save Budget"
+                app:backgroundTint="@color/btncolor" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnExport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Export Transactions"
+                android:icon="@android:drawable/ic_menu_save"
+                android:layout_marginTop="8dp"
+                app:backgroundTint="@color/btn1" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- Bottom Navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#FFFFFF"
+        app:menu="@menu/bottom_nav_menu"
+        app:labelVisibilityMode="labeled"
+        app:itemIconTint="@color/black"
+        app:itemTextColor="@color/black" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
